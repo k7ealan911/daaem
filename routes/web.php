@@ -48,6 +48,10 @@ Route::prefix('student')->middleware('auth')->group(function () {
         Route::get('/nffffoo', 'ffff@noo');
         Route::get('/nffffoo', 'ffff@noo');
         Route::get('/nffffoo', 'ffff@noo');
+        Route::get('/nffffoo', 'ffff@noo');
+        Route::get('/nffffoo', 'ffff@noo');
+        Route::get('/nffffoo', 'ffff@noo');
+
 
 });
 
