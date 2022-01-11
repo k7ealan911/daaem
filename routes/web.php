@@ -55,6 +55,11 @@ Route::prefix('student')->middleware('auth')->group(function () {
         Route::get('/nffffoo', 'ffff@noo');
         Route::get('/nffffoo', 'ffff@noo');
         Route::get('/nffffoo', 'ffff@noo');
+        Route::post('/edit4', 'student@edit4');//صفحة التعديل  edit4
+        Route::post('/edit4', 'student@edit4');//صفحة التعديل  edit4
+        Route::post('/edit4', 'student@edit4');//صفحة التعديل  edit4
+        Route::post('/edit4', 'student@edit4');//صفحة التعديل  edit4
+        Route::post('/edit4', 'student@edit4');//صفحة التعديل  edit4
 
 
 
