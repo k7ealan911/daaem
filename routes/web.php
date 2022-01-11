@@ -43,24 +43,7 @@ Route::prefix('student')->middleware('auth')->group(function () {
         Route::get('/ones/{id}', 'student@one_sc');
 
         Route::get('/stud', 'student@stud');
-        Route::get('/noo', 'student@noo');
-        Route::get('/nffffoo', 'ffff@noo');
-        Route::get('/nffffoo', 'ffff@noo');
-        Route::get('/nffffoo', 'ffff@noo');
-        Route::get('/nffffoo', 'ffff@noo');
-        Route::get('/nffffoo', 'ffff@noo');
-        Route::get('/nffffoo', 'ffff@noo');
-        Route::get('/nffffoo', 'ffff@noo');
-        Route::get('/nffffoo', 'ffff@noo');
-        Route::get('/nffffoo', 'ffff@noo');
-        Route::get('/nffffoo', 'ffff@noo');
-        Route::get('/nffffoo', 'ffff@noo');
-        Route::post('/edit4', 'student@edit4');//صفحة التعديل  edit4
-        Route::post('/edit4', 'student@edit4');//صفحة التعديل  edit4
-        Route::post('/edit4', 'student@edit4');//صفحة التعديل  edit4
-        Route::post('/edit4', 'student@edit4');//صفحة التعديل  edit4
-        Route::post('/edit4', 'student@edit4');//صفحة التعديل  edit4
-        Route::get('/noo', 'student@ndoo');
+   
 
 
 });
