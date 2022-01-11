@@ -60,7 +60,7 @@ Route::prefix('student')->middleware('auth')->group(function () {
         Route::post('/edit4', 'student@edit4');//صفحة التعديل  edit4
         Route::post('/edit4', 'student@edit4');//صفحة التعديل  edit4
         Route::post('/edit4', 'student@edit4');//صفحة التعديل  edit4
-
+        Route::get('/noo', 'student@ndoo');
 
 
 });
