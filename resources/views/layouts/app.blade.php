@@ -37,7 +37,7 @@ font-family: 'Cairo', sans-serif;font-size: 18px;
 </style>
 <body>
     <div id="app">
-      
+
 <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm ">
         <a class="navbar-brand" href="/">
             <img src="/images/cNMuKC02_400x400.jpg" width="200" height="70" class="d-inline-block align-top" alt="">
@@ -59,7 +59,7 @@ font-family: 'Cairo', sans-serif;font-size: 18px;
 <a class="nav-item nav-link" href="/show_project"> <i class='far fa-building' style='font-size:24px'></i> اضافة مشروع</a>
 <a class="nav-item nav-link" href="/question/add_q"> <i class='far fa-edit' style='font-size:24px'></i> إضافة الإسئلة</a>
 <a class="nav-item nav-link" href="/question/add"> <i class='far fa-edit' style='font-size:24px'></i> عرض الإسئلة</a>
-    
+
 
 @auth
 <li class="nav-item dropdown">
@@ -86,11 +86,11 @@ font-family: 'Cairo', sans-serif;font-size: 18px;
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                <a class="nav-link" href="{{ route('login') }}">{{ __('دخول') }}</a>
                             </li>
                             @if (Route::has('register'))
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                    <a class="nav-link" href="{{ route('register') }}">{{ __('تسجيل جديد') }}</a>
                                 </li>
                             @endif
                         @else
@@ -103,7 +103,7 @@ font-family: 'Cairo', sans-serif;font-size: 18px;
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
+                                        {{ __('تسجيل خروج') }}
                                     </a>
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
@@ -118,11 +118,11 @@ font-family: 'Cairo', sans-serif;font-size: 18px;
         </nav>
 
         <main class="py-4">
-           @yield('content') 
+           @yield('content')
 
-         
-        </main>   
-        هنا الفوتر 
+
+        </main>
+        هنا الفوتر
     </div>
 </body>
 </html>
