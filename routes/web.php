@@ -43,6 +43,7 @@ Route::prefix('student')->middleware('auth')->group(function () {
         Route::get('/ones/{id}', 'student@one_sc');
 
         Route::get('/stud', 'student@stud');
+    Route::get('/stud', 'student@stud');
 
 });
 
