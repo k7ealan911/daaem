@@ -19,13 +19,13 @@ class student extends Controller
      */
     public function index()
     {
-      
+
         $school=school::all();
 
      $giver=giver::latest()->paginate(5);
      return view('student.giverr',['give'=>$giver]);
-    
-     
+
+
 
     }
 /**صفحة التعديل **/
@@ -41,11 +41,11 @@ return view('student.edit',['giver'=>$giver,'school'=>$school]);
 //االتعديل
 public function edit4(Request $request )
 {
-    
+
     $data=giver::find($request->id);
      $data->name = $request->name;
     $data->jawal = $request->jawal;
-   
+
     $data->bank_number = $request->bank_number;
     $data->bank_name = $request->bank_name;
     $data->transfer = $request->transfer;
@@ -66,10 +66,10 @@ public function add_giver1()
 
 
     $school=school::all();
- 
+
 return view('student.add_giver',['school'=>$school]);
 
-}       
+}
 public function add_giver(Request $request)
 {
 
@@ -77,7 +77,7 @@ public function add_giver(Request $request)
     $data=new giver();
     $data->name = $request->name;
     $data->jawal = $request->jawal;
-   
+
     $data->bank_number = $request->bank_number;
     $data->bank_name = $request->bank_name;
     $data->transfer = $request->transfer;
@@ -87,6 +87,7 @@ public function add_giver(Request $request)
     $data->student = $request->student;
     $data->date_k = $request->date_k;
     $data->school = $request->school;
+    $data->email = $request->email;
    // $data->user_name = Auth::user()->name;
     //$data->user_id = Auth::user()->id;
     $data->save();
@@ -124,7 +125,7 @@ public function add_giver(Request $request)
     {
       $giver=giver::where('id',$id)->get();
     return view('student/oness',['giver'=>$giver]);
-    
+
     }
     /**
      * Display the specified resource.
@@ -143,7 +144,7 @@ public function add_giver(Request $request)
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-  
+
 
     /**
      * Update the specified resource in storage.
@@ -172,12 +173,12 @@ public function add_giver(Request $request)
 
     public function stud()
     {
-      
+
         $stud=stud::all();
 
      $giver=stud::orderBy('Type','asc','School')->latest()->paginate(20);
      return view('student.stud',['stud'=>$giver]);
-    
+
     //  $school=school::where('user_id',Auth::user()->id)->orderBy('id', 'DESC')->latest()->paginate(5);
 
     }
